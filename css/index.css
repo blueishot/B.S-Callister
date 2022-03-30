@@ -18,6 +18,8 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .menu {
@@ -41,7 +43,7 @@ body {
     user-select: none;
 }
 
-a, button {
+a, button, p {
     all: unset;
 }
 
@@ -76,4 +78,54 @@ button {
     .firstContent {
         width: fit-content;
     }
+}
+
+@media (max-width: 900px) {
+    
+    
+    .homeImage {
+        align-content: flex-start;
+        flex-wrap: wrap;
+    }
+}
+
+.homeContent {
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    user-select: none;
+    flex-wrap: wrap;
+}
+
+.aboutBSCallister {
+    background-color: rgba(47, 47, 48, 0.8);
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 450px;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    justify-content: space-between;
+    color: #ECEEFF;
+    font-size: 20px;
+    user-select: none;
+    border-radius: 10px;
+}
+
+p:first-child {
+    font-size: 40px;
+}
+
+.homeImage {
+    display: flex;
+    align-items: center;
+}
+
+.homeImage img {
+    width: 450px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
 }
