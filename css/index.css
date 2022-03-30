@@ -23,10 +23,13 @@ body {
 .menu {
     display: flex;
     background-color: rgba(47, 47, 48, 0.8);
-    height: 10%;
+    height: 95px;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    padding: 3px;
+    min-width: 775px;
+    max-height: 580px;
 }
 
 .logoMenu {
@@ -42,6 +45,11 @@ a, button {
     all: unset;
 }
 
+.buttonsMenu, .buttonLogin {
+    display: flex;
+    height: 100%;
+}
+
 button {
     height: 100%;
     color: #ECEEFF;
@@ -55,4 +63,17 @@ button {
     color: #718AF4;
     transition: 0.3s;
     cursor: pointer;
+}
+
+@media (max-width: 775px) {
+    .menu {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: fit-content;
+    }
+
+    .firstContent {
+        width: fit-content;
+    }
 }
