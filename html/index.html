@@ -56,29 +56,60 @@
         </div>
     </div>
     <div class="secondContent">
-        <button onclick="goBackward()">
-            <span>&#60;</span>
-        </button>
-        <div class="cardSlider">
-            <img  draggable="false" class="roomImage">
-            <div class="roomTitle">
-                Title
+        <div class="titleForRoomSection">
+            <span>
+                Check our best rooms
+            </span>
+        </div>
+        <div class="carouselRoom">
+            <button onclick="goBackward()">
+                <span>&#60;</span>
+            </button>
+            <div class="cardSlider">
+                <img  draggable="false" class="roomImage">
+                <div class="roomTitle">
+                    Title
+                </div>
+                <div class="roomDescription">
+                    description
+                </div>
+                <div class="roomPrice">
+                    $price
+                </div>
+                <button>
+                    Book now
+                </button>
             </div>
-            <div class="roomDescription">
-                description
-            </div>
-            <div class="roomPrice">
-                $price
-            </div>
-            <button>
-                Book now
+            <button onclick="goForward()">
+                <span>
+                    &#62;
+                </span>
             </button>
         </div>
-        <button onclick="goForward()">
+    </div>
+    <div class="thirdContent">
+        <div class="thirdContentTitle">
             <span>
-                &#62;
+                About B.S Callister
             </span>
-        </button>
+        </div>
+        <div class="aboutArea">
+            <p>
+                B.S Callister
+            </p>
+            <div class="imageChange">
+                <button onclick="imageGoBackward()">
+                    &#60;
+                </button>
+                <img src="../img/spaceship-2.jpg" draggable="false" class="spaceShipImage">
+                <button onclick="imageGoForward()">
+                    &#62;
+                </button>
+            </div>  
+            <p>
+                B.S Callister (Brazillian Ship Callister), is a space ship localized near from <b>Exoplanet K2-18b</b>, created in 2089 made by the engineer <b>Blue is Hot</b> with the purpose of exploring the milky way galaxy, when all milky way galaxy was maped the B.S Callister became a hotel ship.
+            </p>
+        </div>
     </div>
 </body>
 <script src="../javascript/index.js"></script>

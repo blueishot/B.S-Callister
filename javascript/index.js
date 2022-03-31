@@ -31,7 +31,6 @@ let counterObject = 0
 function goForward() {
     if (counterObject == 4 ) {
         counterObject = 0
-        console.log(counterObject)
         roomCardTitle.innerHTML = roomCardItem[counterObject].title
         roomCardDescription.innerHTML = roomCardItem[counterObject].description
         roomCardPrice.innerHTML = roomCardItem[counterObject].price
@@ -42,7 +41,6 @@ function goForward() {
         roomCardDescription.innerHTML = roomCardItem[counterObject].description
         roomCardPrice.innerHTML = roomCardItem[counterObject].price
         roomCardImage.setAttribute('src', roomCardItem[counterObject].image)
-        console.log(counterObject)
     }
 }
 
@@ -64,3 +62,30 @@ function goBackward() {
     }
 }  
 
+let spaceShipImage = window.document.getElementsByClassName('spaceShipImage')[0];
+
+let secondCounter = 2
+
+function imageGoForward() {
+    if (secondCounter == 7) {
+        secondCounter = 2
+        console.log(secondCounter)
+        spaceShipImage.setAttribute('src', `../img/spaceship-${secondCounter}.jpg`)
+    } else {
+        secondCounter++
+        console.log(secondCounter)
+        spaceShipImage.setAttribute('src', `../img/spaceship-${secondCounter}.jpg`)
+    }
+}
+
+function imageGoBackward() {
+    if (secondCounter == 2) {
+        secondCounter = 7
+        console.log(secondCounter)
+        spaceShipImage.setAttribute('src', `../img/spaceship-${secondCounter}.jpg`)
+    } else {
+        secondCounter--
+        console.log(secondCounter)
+        spaceShipImage.setAttribute('src', `../img/spaceship-${secondCounter}.jpg`)
+    }
+}

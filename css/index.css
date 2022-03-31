@@ -13,7 +13,7 @@ body {
 }
 
 .firstContent {
-    height: 90%;
+    height: 820.8px;
     background-image: url(../img/moon-3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -94,6 +94,10 @@ button {
     .secondContent {
         width: 100vh;
     }
+
+    .thirdContent {
+        width: 100vh;
+    }
 }
 
 .homeContent {
@@ -141,8 +145,10 @@ p:first-child {
     height: 820.8px;
     background-color: #2F2F30;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 40px;
 }
 
 .secondContent button {
@@ -188,3 +194,75 @@ p:first-child {
     font-size: 25px;
 }
 
+.carouselRoom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.titleForRoomSection {
+    font-size: 50px;
+    color: #ECEEFF;
+    user-select: none;
+}
+
+.thirdContent {
+    height: 820.8px;
+    background-image: url(../img/moon-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    padding: 10px;
+    user-select: none;
+}
+
+.thirdContentTitle {
+    font-size: 80px;
+    color: #ECEEFF;
+}
+
+.aboutArea {
+    width: 700px;
+    height: 550px;
+    background-color: rgba(47, 47, 48, 0.8);
+    border-radius: 20px;
+    color: #ECEEFF;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.aboutArea img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: #718AF4 solid 3px;
+}
+
+.imageChange {
+    display: flex;
+    align-items: center;
+}
+
+.imageChange Button {
+    height: fit-content;
+    font-size: 100px;
+}
+
+.aboutArea p:first-child {
+    font-size: 40px;
+}
+
+.aboutArea p {
+    font-size: 25px;
+    text-align: justify;
+    text-indent: 20px;
+}
