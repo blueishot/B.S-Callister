@@ -89,3 +89,37 @@ function imageGoBackward() {
         spaceShipImage.setAttribute('src', `../img/spaceship-${secondCounter}.jpg`)
     }
 }
+
+// Top Button
+
+let goToTopButton = window.document.getElementsByClassName('buttonGoTop')[0]
+
+function scrollWindow() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        goToTopButton.style.display = "flex"
+    } else {
+        goToTopButton.style.display = "none"
+    }
+}
+
+window.onscroll = function() {scrollWindow()}
+
+function goTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+function goBooking() {
+    document.body.scrollDown = 750;
+    document.documentElement.scrollTop = 750;
+}
+
+function goAbout() {
+    document.body.scrollDown = 1650;
+    document.documentElement.scrollTop = 1650;
+}
+
+function goContact() {
+    document.body.scrollDown = 3000;
+    document.documentElement.scrollTop = 3000;
+}
