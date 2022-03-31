@@ -84,11 +84,13 @@ button {
     
     .firstContent {
         width: 100vh;
+        height: 900px;
     }
 
     .homeImage {
         align-content: flex-start;
         flex-wrap: wrap;
+
     }
 
     .secondContent {
@@ -99,6 +101,28 @@ button {
         width: 100vh;
     }
 
+    body {
+        background-color: #2F2F30;
+    }
+
+    .contactInformations {
+        flex-direction: column;
+    }
+
+    footer {
+        height: 100% !important; 
+        display: flex;
+    }
+
+    .footerTitle {
+        visibility: hidden;
+    }
+}
+
+@media (max-width: 970px) {
+    body {
+        background-color: #2F2F30;
+    }
 }
 
 .homeContent {
@@ -137,9 +161,9 @@ p:first-child {
 
 .homeImage img {
     width: 450px;
-    height: 300px;
+    height: 450px;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 50%;
 }
 
 .secondContent {
