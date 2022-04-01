@@ -105,21 +105,21 @@ function scrollWindow() {
 window.onscroll = function() {scrollWindow()}
 
 function goTop() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
+    document.body.scrollTo({top: 0, behavior: "smooth"});
+    document.documentElement.scrollTo({top: 0, behavior: "smooth"});
 }
 
 function goBooking() {
     document.body.scrollDown = 750;
-    document.documentElement.scrollTop = 750;
+    document.documentElement.scrollDown = 750;
 }
 
 function goAbout() {
     document.body.scrollDown = 1650;
-    document.documentElement.scrollTop = 1650;
+    document.documentElement.scrollDown = 1650;
 }
 
 function goContact() {
     document.body.scrollDown = 3000;
-    document.documentElement.scrollTop = 3000;
+    document.documentElement.scrollDown = 3000;
 }

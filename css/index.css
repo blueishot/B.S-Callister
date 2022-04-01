@@ -14,7 +14,7 @@ body {
 
 .firstContent {
     height: 820.8px;
-    background-image: url(../img/moon-3.jpg);
+    background-image: url(../img/moon-1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -134,7 +134,7 @@ button {
     flex-wrap: wrap;
 }
 
-.aboutBSCallister {
+.introBSCallister {
     background-color: rgba(47, 47, 48, 0.8);
     display: flex;
     flex-direction: column;
@@ -145,13 +145,13 @@ button {
     padding: 15px;
     justify-content: space-between;
     color: #ECEEFF;
-    font-size: 20px;
+    font-size: 26px;
     user-select: none;
     border-radius: 10px;
 }
 
 p:first-child {
-    font-size: 40px;
+    font-size: 50px;
 }
 
 .homeImage {
@@ -168,7 +168,7 @@ p:first-child {
 
 .secondContent {
     height: 820.8px;
-    background-color: #2F2F30;
+    background-image: linear-gradient(to bottom, #021861, #002163, #002a64, #043163, #133862);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -233,7 +233,7 @@ p:first-child {
 
 .thirdContent {
     height: 820.8px;
-    background-image: url(../img/moon-1.jpg);
+    background-image: url(../img/moon-3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
