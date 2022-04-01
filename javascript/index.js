@@ -110,16 +110,16 @@ function goTop() {
 }
 
 function goBooking() {
-    document.body.scrollDown = 750;
-    document.documentElement.scrollDown = 750;
+    document.body.scrollTop = 750;
+    document.documentElement.scrollTop = 750;
 }
 
 function goAbout() {
-    document.body.scrollDown = 1650;
-    document.documentElement.scrollDown = 1650;
+    document.body.scrollTop = 1650;
+    document.documentElement.scrollTop = 1650;
 }
 
 function goContact() {
-    document.body.scrollDown = 3000;
-    document.documentElement.scrollDown = 3000;
+    document.body.scrollTop = 3000;
+    document.documentElement.scrollTop = 1650;
 }
